@@ -1,114 +1,342 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Best Gaming Mics 2025 | GearUpGG</title>
-  <meta name="description" content="Best gaming microphones for streaming and content creation. Reviews, comparisons, and Amazon affiliate links.">
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GearUpGG — Top 10 Gaming Mics</title>
+  <meta name="description" content="GearUpGG — Curated Top 10 gaming mics with Amazon affiliate links." />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #000;
-      color: #fff;
-      padding: 20px;
+    :root{
+      --bg:#0b0b0b;
+      --card:#0f0f0f;
+      --muted:#9aa4b2;
+      --accent:#00d1ff;
+      --glass: rgba(255,255,255,0.03);
+      --glass-2: rgba(255,255,255,0.02);
+      --maxw:1100px;
+      --radius:12px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
-
-    h1 {
-      text-align: center;
-      color: #0ff;
-      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#050505 0%, #0b0b0b 100%);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      padding:32px 16px;
     }
-
-    #mic-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
+    .site{
+      max-width:var(--maxw);
+      margin:0 auto;
     }
-
-    .mic-item {
-      background: #111;
-      padding: 15px;
-      border-radius: 15px;
-      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
-      transition: transform 0.3s, box-shadow 0.3s;
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom:28px;
     }
-
-    .mic-item:hover {
-      transform: scale(1.03);
-      box-shadow: 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
     }
-
-    .mic-item h2 {
-      color: #0ff;
-      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:10px;
+      background:linear-gradient(135deg,#09121a,#00293a);
+      display:grid;
+      place-items:center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.6), inset 0 -6px 18px rgba(0,0,0,0.45);
+      font-weight:800;
+      font-size:20px;
+      color:var(--accent);
     }
-
-    .mic-item img {
-      display: block;
-      max-width: 100%;
-      border-radius: 10px;
-      margin: 10px 0;
+    h1{font-size:20px;margin:0}
+    .slogan{color:var(--muted);font-size:13px}
+    nav{display:flex;gap:12px;align-items:center;}
+    .btn{
+      background:transparent;
+      border:1px solid rgba(255,255,255,0.06);
+      color:var(--muted);
+      padding:8px 12px;border-radius:10px;
+      font-size:13px;
+      cursor:pointer;
     }
-
-    button {
-      background: #0ff;
-      color: #000;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 8px;
-      cursor: pointer;
-      box-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
-      transition: 0.3s;
+    .hero{
+      background:linear-gradient(180deg, rgba(255,255,255,0.015), transparent);
+      border-radius:14px;
+      padding:28px;
+      display:grid;
+      grid-template-columns:1fr 320px;
+      gap:20px;
+      align-items:center;
+      margin-bottom:28px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.6);
     }
-
-    button:hover {
-      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
-      transform: scale(1.05);
+    .hero h2{margin:0 0 8px 0;font-size:28px}
+    .hero p{margin:0;color:var(--muted)}
+    .search{
+      display:flex;
+      gap:8px;
+      margin-top:12px;
     }
-
-    p {
-      line-height: 1.4;
+    .search input{
+      flex:1;padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);
+      background:transparent;color:inherit;
+      outline:none;
+    }
+    .search button{padding:10px 12px;border-radius:10px;border:none;background:var(--accent);color:#011016;font-weight:600}
+    .aside{
+      padding:18px;border-radius:12px;background:linear-gradient(180deg,var(--glass),var(--glass-2));
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    .aside h3{margin:0 0 10px 0}
+    .tag{display:inline-block;font-size:13px;padding:6px 8px;border-radius:999px;background:rgba(0,0,0,0.4);border:1px solid rgba(255,255,255,0.02);margin:4px;color:var(--muted)}
+    .list{
+      display:grid;
+      gap:14px;
+      margin-top:18px;
+    }
+    .card{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      background:var(--card);
+      padding:12px;border-radius:12px;
+      border:1px solid rgba(255,255,255,0.02);
+    }
+    .thumb{
+      width:120px;
+      height:90px;
+      flex-shrink:0;
+      border-radius:8px;
+      overflow:hidden;
+      background:linear-gradient(135deg,#071018,#00121a);
+      display:grid;place-items:center;
+      color:var(--accent);
+      font-weight:700;
+      font-size:12px;
+      box-shadow: inset 0 -10px 50px rgba(0,0,0,0.5);
+    }
+    .meta{flex:1}
+    .meta h4{margin:0 0 6px 0;font-size:16px}
+    .meta p{margin:0;color:var(--muted);font-size:13px}
+    .price{font-weight:700;color:var(--accent);margin-top:6px}
+    .actions{
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      align-items:flex-end;
+      justify-content:center;
+    }
+    .aff{
+      background:linear-gradient(90deg,var(--accent),#00ffa6);
+      color:#021216;
+      padding:8px 12px;border-radius:10px;border:none;font-weight:700;cursor:pointer;
+      text-decoration:none;
+    }
+    .rank{
+      font-size:13px;color:var(--muted);margin-bottom:6px
+    }
+    footer{margin-top:28px;padding:18px;border-radius:12px;background:linear-gradient(180deg,var(--glass-2),transparent);color:var(--muted)}
+    .small{font-size:13px}
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr; padding:18px}
+      .thumb{width:100px;height:80px}
+      .actions{align-items:flex-start}
     }
   </style>
 </head>
 <body>
-  <h1>Best Gaming Mics 2025</h1>
-  <p style="text-align:center;">Find the best microphones for gaming, streaming, and content creation. Click "Buy on Amazon" to grab your favorite mic!</p>
+  <div class="site">
+    <header>
+      <div class="brand">
+        <div class="logo">G↑</div>
+        <div>
+          <h1>GearUpGG</h1>
+          <div class="slogan">Level up your sound — Top gaming mics, curated</div>
+        </div>
+      </div>
+      <nav>
+        <button class="btn" onclick="scrollToTop()">Top 10</button>
+        <button class="btn" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">About</button>
+      </nav>
+    </header>
 
-  <div id="mic-list"></div>
+    <main>
+      <section class="hero" id="top">
+        <div>
+          <h2>Top 10 Gaming Microphones — Tried & Curated</h2>
+          <p>Whether you stream, podcast, or just chat with friends, the right mic makes you sound pro. Below you'll find GearUpGG's hand-picked Top 10 gaming microphones with short breakdowns and Amazon affiliate links (replace the sample tags with your Amazon Associates tag).</p>
+
+          <div class="search" role="search" aria-label="Search mics">
+            <input id="q" placeholder="Search mics (name, feature)..." oninput="filterList()" />
+            <button onclick="filterList()">Search</button>
+          </div>
+
+          <div style="margin-top:14px;color:var(--muted);font-size:13px">
+            Tip: Click "View on Amazon" to open the product page. Replace the sample affiliate tag <code>?tag=yourtag-20</code> with your own Amazon Associates tag.
+          </div>
+        </div>
+
+        <aside class="aside">
+          <h3>Quick Filters</h3>
+          <div style="margin-top:10px">
+            <button class="tag" onclick="applyFilter('all')">All</button>
+            <button class="tag" onclick="applyFilter('usb')">USB</button>
+            <button class="tag" onclick="applyFilter('xlr')">XLR</button>
+            <button class="tag" onclick="applyFilter('streaming')">Streaming</button>
+            <button class="tag" onclick="applyFilter('budget')">Budget</button>
+          </div>
+          <div style="margin-top:16px">
+            <h4 style="margin:0 0 8px 0">Why trust GearUpGG?</h4>
+            <p class="small" style="margin:0;color:var(--muted)">We focus on one category — microphones — so you get deeper, up-to-date recommendations that fit every budget and setup.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section id="list" class="list" aria-live="polite" style="margin-top:18px">
+        <!-- Cards will be injected here by JS -->
+      </section>
+
+      <section id="about" style="margin-top:26px">
+        <footer>
+          <div style="display:flex;justify-content:space-between;gap:16px;align-items:center">
+            <div>
+              <strong>About GearUpGG</strong>
+              <div class="small" style="margin-top:6px">GearUpGG curates the best gaming microphones for streamers, podcasters, and competitive players. This site contains affiliate links — if you purchase through them we may earn a commission at no extra cost to you.</div>
+            </div>
+            <div style="text-align:right">
+              <div class="small">Created for <strong>Ozzy</strong></div>
+              <div class="small" style="margin-top:6px">Hosted anywhere — just upload <code>index.html</code></div>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </main>
+  </div>
 
   <script>
-    const micList = [
-      { rank:1, name:"Blue Yeti USB Microphone", type:"USB", price:"$129", desc:"Legendary plug-and-play mic with multiple polar patterns and crystal-clear sound. Ideal for streamers, YouTubers, and podcasters.", image:"images/blue-yeti.jpg", link:"https://www.amazon.com/dp/B00N1YPXW2?tag=YOURTAG-20" },
-      { rank:2, name:"Shure MV7 Dynamic Microphone", type:"USB/XLR", price:"$249", desc:"Hybrid XLR-USB mic built for streamers and pros. Delivers broadcast-quality sound and connects easily to PC or audio interface.", image:"images/shure-mv7.jpg", link:"https://www.amazon.com/dp/B08KX2DW1H?tag=YOURTAG-20" },
-      { rank:3, name:"HyperX QuadCast S RGB Microphone", type:"USB", price:"$139", desc:"Stylish RGB mic with shock mount and tap-to-mute sensor. Great audio quality and eye-catching design for gamers and creators.", image:"images/hyperx-quadcast.jpg", link:"https://www.amazon.com/dp/B08KX2KT37?tag=YOURTAG-20" },
-      { rank:4, name:"Elgato Wave:3 USB Microphone", type:"USB", price:"$149", desc:"Clean digital sound with built-in clipguard and Elgato Wave Link software for perfect control during live streams.", image:"imalgato-wave3.jpg", link:"https://www.amazon.com/dp/B0883J7R2J?tag=YOURTAG-20" },
-      { rank:5, name:"Razer Seiren V2 Pro", type:"USB", price:"$149", desc:"Dynamic mic tuned for deep, rich voice tones. Built-in gain control and high-pass filter keep your streams sounding pro.", image:"images/razer-seiren-v2.jpg", link:"https://www.amazon.com/dp/B09H7C3D1K?tag=YOURTAG-20" },ges/e
-      { rank:6, name:"Audio-Technica AT2020 USB Microphone", type:"USB", price:"$99", desc:"Affordable, professional-quality condenser mic. Crisp audio for podcasts, streaming, and gaming.", image:"images/at2020.jpg", link:"https://www.amazon.com/dp/B00B5ZX9FM?tag=YOURTAG-20" },
-      { rank:7, name:"Samson Meteor Mic USB Studio Microphone", type:"USB", price:"$69", desc:"Compact, stylish mic with excellent sound quality. Perfect for beginner streamers and gamers on a budget.", image:"images/samson-meteor.jpg", link:"https://www.amazon.com/dp/B004MF39YS?tag=YOURTAG-20" },
-      { rank:8, name:"Fifine K669B USB Condenser Microphone", type:"USB", price:"$49", desc:"Budget-friendly mic with surprisingly clear audio. Great for casual streaming, gaming, and voice chat.", image:"images/fifine-k669b.jpg", link:"https://www.amazon.com/dp/B06XCKGLTP?tag=YOURTAG-20" },
-      { rank:9, name:"Rode NT-USB Mini", type:"USB", price:"$99", desc:"Small form factor with excellent sound quality. Perfect for desk setups and streamers who want a clean, simple mic.", image:"images/rode-ntusb-mini.jpg", link:"https://www.amazon.com/dp/B084CQ41M2?tag=YOURTAG-20" },
-      { rank:10, name:"Corsair Virtuoso RGB Wireless XT Mic", type:"Wireless/USB", price:"$179", desc:"Wireless gaming headset with high-fidelity mic. Excellent choice for gamers who want freedom from cables.", image:"images/corsair-virtuoso.jpg", link:"https://www.amazon.com/dp/B089Q4YQGZ?tag=YOURTAG-20" }
+    // Sample Top 10 mics data. Replace ASINs and affiliate tag with your own.
+    const AFFILIATE_TAG = 'yourtag-20'; // <-- Replace with your Amazon Associates tag
+    const MICS = [
+      {rank:1, name:"Blue Yeti", type:"usb", price:"$129", desc:"Versatile USB mic, multiple patterns, great for streaming.", asin:"B00N1YPXW2"},
+      {rank:2, name:"Shure SM7B", type:"xlr", price:"$399", desc:"Broadcast-quality dynamic mic used by pro streamers and podcasters.", asin:"B0002E4Z8M"},
+      {rank:3, name:"Elgato Wave:3", type:"usb", price:"$149", desc:"Built for streamers: clipguard tech and onboard mixing.", asin:"B07ZZWZG3M"},
+      {rank:4, name:"HyperX QuadCast S", type:"usb", price:"$139", desc:"Vibrant RGB mic with built-in shock mount and tap-to-mute.", asin:"B07WQ4P4Y2"},
+      {rank:5, name:"Rode NT-USB", type:"usb", price:"$169", desc:"Studio-quality USB condenser with excellent clarity.", asin:"B00KQPGRRE"},
+      {rank:6, name:"Audio-Technica AT2020", type:"xlr", price:"$99", desc:"Affordable condenser with great sound for beginners (requires interface).", asin:"B0006H92QK"},
+      {rank:7, name:"Samson G-Track Pro", type:"usb", price:"$179", desc:"All-in-one interface + mic, good for streamers who record instruments.", asin:"B00K0I4Q0Y"},
+      {rank:8, name:"HyperX SoloCast", type:"usb", price:"$59", desc:"Budget-friendly and compact — great starter mic.", asin:"B07W5VQX6K"},
+      {rank:9, name:"Razer Seiren X", type:"usb", price:"$99", desc:"Low-profile mic with built-in shockmount for streamers.", asin:"B0749G6P5S"},
+      {rank:10, name:"AKG P120", type:"xlr", price:"$99", desc:"Durable, studio condenser at a budget price.", asin:"B004Q0Q5QE"}
     ];
 
-    const container = document.getElementById("mic-list");
+    function amazonUrl(asin){
+      return `https://www.amazon.com/dp/${asin}?tag=${AFFILIATE_TAG}`;
+    }
 
-    micList.forEach(mic => {
-      const micDiv = document.createElement("div");
-      micDiv.className = "mic-item";
+    function createThumb(name, rank){
+      // SVG placeholder with gradient and mic icon-ish shape
+      const svg = `
+        <svg xmlns='http://www.w3.org/2000/svg' width='480' height='360' viewBox='0 0 480 360'>
+          <defs>
+            <linearGradient id='g' x1='0' x2='1' y1='0' y2='1'>
+              <stop offset='0' stop-color='#00121a'/>
+              <stop offset='1' stop-color='#003241'/>
+            </linearGradient>
+          </defs>
+          <rect width='100%' height='100%' fill='url(#g)' rx='12'/>
+          <g transform='translate(60,50)' fill='none' stroke='rgba(0,255,255,0.12)' stroke-width='6'>
+            <rect x='0' y='0' width='260' height='180' rx='12' />
+          </g>
+          <g transform='translate(180,120)' fill='rgba(0,255,255,0.12)'>
+            <rect x='-30' y='-50' width='60' height='110' rx='30'/>
+            <rect x='-16' y='60' width='32' height='36' rx='6'/>
+          </g>
+          <text x='18' y='320' font-family='Arial' font-size='28' fill='rgba(255,255,255,0.12)'>${name}</text>
+          <text x='380' y='40' font-family='Arial' font-size='20' fill='rgba(0,209,255,0.9)'>#${rank}</text>
+        </svg>
+      `.trim();
+      return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+    }
 
-      micDiv.innerHTML = `
-        <h2>${mic.rank}. ${mic.name}</h2>
-        <img src="${mic.image}" alt="${mic.name} Microphone">
-        <p>${mic.desc}</p>
-        <p>Type: ${mic.type} | Price: ${mic.price}</p>
-        <a href="${mic.link}" target="_blank"><button>Buy on Amazon</button></a>
-      `;
+    function renderList(items){
+      const container = document.getElementById('list');
+      container.innerHTML = '';
+      items.forEach(item=>{
+        const card = document.createElement('article');
+        card.className = 'card';
+        card.dataset.type = item.type;
 
-      container.appendChild(micDiv);
-    });
+        const thumb = document.createElement('div');
+        thumb.className = 'thumb';
+        const img = document.createElement('img');
+        img.src = createThumb(item.name, item.rank);
+        img.alt = item.name + ' image';
+        img.style.width='100%'; img.style.height='100%'; img.style.objectFit='cover';
+        thumb.appendChild(img);
+
+        const meta = document.createElement('div');
+        meta.className = 'meta';
+        const h4 = document.createElement('h4');
+        h4.textContent = item.name;
+        const p = document.createElement('p');
+        p.textContent = item.desc;
+        const price = document.createElement('div');
+        price.className='price';
+        price.textContent = item.price;
+
+        meta.appendChild(h4);
+        meta.appendChild(p);
+        meta.appendChild(price);
+
+        const actions = document.createElement('div');
+        actions.className = 'actions';
+        const rank = document.createElement('div'); rank.className='rank'; rank.textContent = 'Rank #' + item.rank;
+        const a = document.createElement('a');
+        a.className='aff';
+        a.href = amazonUrl(item.asin);
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        a.textContent = 'View on Amazon';
+
+        actions.appendChild(rank);
+        actions.appendChild(a);
+
+        card.appendChild(thumb);
+        card.appendChild(meta);
+        card.appendChild(actions);
+
+        container.appendChild(card);
+      });
+    }
+
+    function filterList(){
+      const q = document.getElementById('q').value.trim().toLowerCase();
+      const filtered = MICS.filter(m=>{
+        if(!q) return true;
+        return m.name.toLowerCase().includes(q) || m.desc.toLowerCase().includes(q) || m.type.toLowerCase().includes(q);
+      });
+      renderList(filtered);
+    }
+
+    function applyFilter(tag){
+      if(tag === 'all'){ renderList(MICS); return; }
+      const filtered = MICS.filter(m => m.type === tag || (tag === 'budget' && m.price && parseInt(m.price.replace(/[^0-9]/g,'')) < 120) || (tag==='streaming' && /stream|clip|mix/i.test(m.desc)));
+      renderList(filtered);
+      window.scrollTo({top: document.getElementById('list').offsetTop - 20, behavior:'smooth'});
+    }
+
+    function scrollToTop(){ document.getElementById('top').scrollIntoView({behavior:'smooth'}) }
+
+    // initial render
+    renderList(MICS);
   </script>
 </body>
 </html>

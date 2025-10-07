@@ -1,89 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Best Gaming Mics 2025 | GearUpGG</title>
-  <meta name="description" content="Best gaming microphones for streaming and content creation. Reviews, comparisons, and Amazon affiliate links.">
-  <style>
-    body { font-family: Arial, sans-serif; padding: 20px; background: #f4f4f4; }
-    .mic-item { background: #fff; padding: 15px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .mic-item img { display: block; margin: 10px 0; max-width: 100%; border-radius: 5px; }
-    button { padding: 8px 15px; border: none; background: #0073e6; color: #fff; border-radius: 5px; cursor: pointer; }
-    button:hover { background: #005bb5; }
-  </style>
-</head>
-<body>
-  <h1>Best Gaming Mics 2025</h1>
-  <p>Find the best microphones for gaming, streaming, and content creation. Click the "Buy on Amazon" button to grab your favorite mic!</p>
-
-  <div id="mic-list"></div>
-
-  <script>
-    const micList = [
-      {
-        rank: 1,
-        name: "Blue Yeti USB Microphone",
-        type: "USB",
-        price: "$129",
-        desc: "Legendary plug-and-play mic with multiple polar patterns and crystal-clear sound. Ideal for streamers, YouTubers, and podcasters.",
-        image: "images/blue-yeti.jpg",
-        link: "https://www.amazon.com/dp/B00N1YPXW2?tag=YOURTAG-20"
-      },
-      {
-        rank: 2,
-        name: "Shure MV7 Dynamic Microphone",
-        type: "USB/XLR",
-        price: "$249",
-        desc: "Hybrid XLR-USB mic built for streamers and pros. Delivers broadcast-quality sound and connects easily to PC or audio interface.",
-        image: "images/shure-mv7.jpg",
-        link: "https://www.amazon.com/dp/B08KX2DW1H?tag=YOURTAG-20"
-      },
-      {
-        rank: 3,
-        name: "HyperX QuadCast S RGB Microphone",
-        type: "USB",
-        price: "$139",
-        desc: "Stylish RGB mic with shock mount and tap-to-mute sensor. Great audio quality and eye-catching design for gamers and creators.",
-        image: "images/hyperx-quadcast.jpg",
-        link: "https://www.amazon.com/dp/B08KX2KT37?tag=YOURTAG-20"
-      },
-      {
-        rank: 4,
-        name: "Elgato Wave:3 USB Microphone",
-        type: "USB",
-        price: "$149",
-        desc: "Clean digital sound with built-in clipguard and Elgato Wave Link software for perfect control during live streams.",
-        image: "images/elgato-wave3.jpg",
-        link: "https://www.amazon.com/dp/B0883J7R2J?tag=YOURTAG-20"
-      },
-      {
-        rank: 5,
-        name: "Razer Seiren V2 Pro",
-        type: "USB",
-        price: "$149",
-        desc: "Dynamic mic tuned for deep, rich voice tones. Built-in gain control and high-pass filter keep your streams sounding pro.",
-        image: "images/razer-seiren-v2.jpg",
-        link: "https://www.amazon.com/dp/B09H7C3D1K?tag=YOURTAG-20"
-      }
-    ];
-
-    const container = document.getElementById("mic-list");
-
-    micList.forEach(mic => {
-      const micDiv = document.createElement("div");
-      micDiv.className = "mic-item";
-
-      micDiv.innerHTML = `
-        <h2>${mic.rank}. ${mic.name}</h2>
-        <img src="${mic.image}" alt="${mic.name} Microphone">
-        <p>${mic.desc}</p>
-        <p>Type: ${mic.type} | Price: ${mic.price}</p>
-        <a href="${mic.link}" target="_blank"><button>Buy on Amazon</button></a>
-      `;
-
-      container.appendChild(micDiv);
-    });
-  </script>
-</body>
-</html>
+const micList = [
+  {
+    rank: 1,
+    name: "Blue Yeti USB Microphone",
+    type: "USB",
+    price: "$129",
+    desc: "Legendary plug-and-play mic with multiple polar patterns and crystal-clear sound. Ideal for streamers, YouTubers, and podcasters.",
+    image: "images/blue-yeti.jpg",
+    link: "https://www.amazon.com/dp/B00N1YPXW2?tag=YOURTAG-20"
+  },
+  {
+    rank: 2,
+    name: "Shure MV7 Dynamic Microphone",
+    type: "USB/XLR",
+    price: "$249",
+    desc: "Hybrid XLR-USB mic built for streamers and pros. Delivers broadcast-quality sound and connects easily to PC or audio interface.",
+    image: "images/shure-mv7.jpg",
+    link: "https://www.amazon.com/dp/B08KX2DW1H?tag=YOURTAG-20"
+  },
+  {
+    rank: 3,
+    name: "HyperX QuadCast S RGB Microphone",
+    type: "USB",
+    price: "$139",
+    desc: "Stylish RGB mic with shock mount and tap-to-mute sensor. Great audio quality and eye-catching design for gamers and creators.",
+    image: "images/hyperx-quadcast.jpg",
+    link: "https://www.amazon.com/dp/B08KX2KT37?tag=YOURTAG-20"
+  },
+  {
+    rank: 4,
+    name: "Elgato Wave:3 USB Microphone",
+    type: "USB",
+    price: "$149",
+    desc: "Clean digital sound with built-in clipguard and Elgato Wave Link software for perfect control during live streams.",
+    image: "images/elgato-wave3.jpg",
+    link: "https://www.amazon.com/dp/B0883J7R2J?tag=YOURTAG-20"
+  },
+  {
+    rank: 5,
+    name: "Razer Seiren V2 Pro",
+    type: "USB",
+    price: "$149",
+    desc: "Dynamic mic tuned for deep, rich voice tones. Built-in gain control and high-pass filter keep your streams sounding pro.",
+    image: "images/razer-seiren-v2.jpg",
+    link: "https://www.amazon.com/dp/B09H7C3D1K?tag=YOURTAG-20"
+  },
+  {
+    rank: 6,
+    name: "Audio-Technica AT2020 USB Microphone",
+    type: "USB",
+    price: "$99",
+    desc: "Affordable, professional-quality condenser mic. Crisp audio for podcasts, streaming, and gaming.",
+    image: "images/at2020.jpg",
+    link: "https://www.amazon.com/dp/B00B5ZX9FM?tag=YOURTAG-20"
+  },
+  {
+    rank: 7,
+    name: "Samson Meteor Mic USB Studio Microphone",
+    type: "USB",
+    price: "$69",
+    desc: "Compact, stylish mic with excellent sound quality. Perfect for beginner streamers and gamers on a budget.",
+    image: "images/samson-meteor.jpg",
+    link: "https://www.amazon.com/dp/B004MF39YS?tag=YOURTAG-20"
+  },
+  {
+    rank: 8,
+    name: "Fifine K669B USB Condenser Microphone",
+    type: "USB",
+    price: "$49",
+    desc: "Budget-friendly mic with surprisingly clear audio. Great for casual streaming, gaming, and voice chat.",
+    image: "images/fifine-k669b.jpg",
+    link: "https://www.amazon.com/dp/B06XCKGLTP?tag=YOURTAG-20"
+  },
+  {
+    rank: 9,
+    name: "Rode NT-USB Mini",
+    type: "USB",
+    price: "$99",
+    desc: "Small form factor with excellent sound quality. Perfect for desk setups and streamers who want a clean, simple mic.",
+    image: "images/rode-ntusb-mini.jpg",
+    link: "https://www.amazon.com/dp/B084CQ41M2?tag=YOURTAG-20"
+  },
+  {
+    rank: 10,
+    name: "Corsair Virtuoso RGB Wireless XT Mic",
+    type: "Wireless/USB",
+    price: "$179",
+    desc: "Wireless gaming headset with high-fidelity mic. Excellent choice for gamers who want freedom from cables.",
+    image: "images/corsair-virtuoso.jpg",
+    link: "https://www.amazon.com/dp/B089Q4YQGZ?tag=YOURTAG-20"
+  }
+];
